@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/media.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav class="flex-ac">
+      <img src="./images/logo.svg" />
+      <ul class="flex-ac">
+        <li class="item dropdown">
+          <header class="flex-ac">
+            <p class="title">feature</p>
+            <img src="./images/icon-arrow-down.svg" class="arrow-down" />
+            <img src="./images/icon-arrow-up.svg" class="arrow-up" />
+          </header>
+          <div>
+            <div class="flex-ac">
+              <img src="./images/icon-todo.svg" />
+              <p class="title">todo list</p>
+            </div>
+            <div class="flex-ac">
+              <img src="./images/icon-calendar.svg" />
+              <p class="title">calendar</p>
+            </div>
+            <div class="flex-ac">
+              <img src="./images/icon-reminders.svg" />
+              <p class="title">reminders</p>
+            </div>
+            <div class="flex-ac">
+              <img src="./images/icon-planning.svg" />
+              <p class="title">planning</p>
+            </div>
+          </div>
+        </li>
+        <li class="item dropdown">
+          <header class="flex-ac">
+            <p class="title">company</p>
+            <img src="./images/icon-arrow-down.svg" class="arrow-down" />
+            <img src="./images/icon-arrow-up.svg" class="arrow-up" />
+          </header>
+          <div>
+            <div class="flex-ac title">history</div>
+            <div class="flex-ac title">our team</div>
+            <div class="flex-ac title">blog</div>
+          </div>
+        </li>
+        <li class="item">
+          <p class="title">carrers</p>
+        </li>
+        <li class="item">
+          <p class="title">about</p>
+        </li>
+        <button class="login">login</button>
+        <button class="singup">register</button>
+      </ul>
+      <button id="menuButton">
+        <img src="./images/icon-menu.svg" class="open" />
+        <img src="./images/icon-close-menu.svg" class="close" />
+      </button>
+      <div class="bg"></div>
+    </nav>
+    <main>
+      <aside>
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div>
+          <img src="./images/client-databiz.svg" />
+          <img src="./images/client-audiophile.svg" />
+          <img src="./images/client-meet.svg" />
+          <img src="./images/client-maker.svg" />
+        </div>
+      </aside>
+      <div>
+        <img class="desktop" src="./images/image-hero-desktop.png" />
+        <img class="mobile" src="./images/image-hero-mobile.png" />
+      </div>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+@media screen and (max-width: 900px) {
+  main {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    aside {
+      width: 50%;
+    }
+    > div {
+      .desktop {
+        margin-left: 50px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 781px) {
+  nav {
+    > button {
+      display: none;
+    }
+  }
+  .bg {
+    display: none;
+  }
+
+  ul {
+    .item .title {
+      &:hover {
+        transition: 0.3s;
+        color: var(--black);
+      }
+    }
+    .dropdown {
+      > div {
+        width: max-content;
+        position: absolute;
+        padding-inline: 20px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: translateY(110%);
+        border-radius: 4px;
+        div {
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          img {
+            width: 15px;
+          }
+        }
+      }
+      header:hover + div {
+        box-shadow: 0px 10px 25px 4px rgb(201, 201, 201);
+        height: max-content;
+        padding-block: 20px;
+      }
+    }
+    > button {
+      width: 100px !important;
+      &.login {
+        margin-left: auto;
+      }
+      &:hover {
+        transition: 0.3s;
+        border-color: var(--black);
+        color: var(--black);
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    overflow: hidden;
+  }
+  main {
+    width: 400px;
+    height: 90%;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    aside {
+      width: 100%;
+      height: 50%;
+      padding: 0;
+      h1 {
+        margin: 10px 0;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        width: 320px;
+        font-size: 18px;
+        margin: 0px auto;
+      }
+      button {
+        margin: 10px auto;
+      }
+      > div {
+        margin: 10px 0px 0px;
+      }
+    }
+    > div {
+      width: 100%;
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  nav {
+    position: relative;
+    > button {
+      display: block;
+      margin-inline: auto 10px;
+      z-index: 3;
+      .close {
+        display: none;
+      }
+    }
+    ul {
+      transition: 0.3s;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      flex-direction: column;
+      padding-top: 100px;
+      height: 100vh;
+      overflow: hidden;
+      background-color: white;
+      .item {
+        width: 100%;
+        margin: 20px 0px 0px 30px;
+        .title {
+          font-size: 20px;
+        }
+      }
+      .dropdown {
+        header {
+          pointer-events: all;
+        }
+        > div {
+          div {
+            margin-bottom: 20px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          img {
+            width: 20px;
+          }
+        }
+        &.active {
+          > div {
+            height: max-content;
+            padding-block: 20px;
+          }
+        }
+      }
+      > button {
+        &.login {
+          margin-top: 30px;
+        }
+      }
+    }
+    &.active {
+      .bg {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--black);
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+      }
+      button {
+        .close {
+          display: block;
+        }
+        .open {
+          display: none;
+        }
+      }
+      ul {
+        width: 250px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    width: 100%;
+    aside {
+      > div,
+      h1,
+      button {
+        margin-block: 20px;
+      }
+    }
+  }
+}
